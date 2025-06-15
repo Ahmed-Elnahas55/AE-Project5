@@ -1,0 +1,206 @@
+/* Start Global Rules */
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+:root {
+--main-color: #3A5B22;
+--main-color-link: #0C2A92;
+--section-background: green;
+--main-transition: 0.4s;
+--main-padding-top: 90px;
+--main-padding-bottom: 90px;
+}
+html {
+scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "opensans", sans-serif;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+a {
+text-decoration: none;
+}
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+.container {
+min-width: 95%;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+.youtube:hover i{
+  color: #ff0000;
+}
+.twitter:hover i{
+  color: #1da1f2;
+}
+/* Small */
+@media (min-width: 768px) {
+.container {
+  width: 750px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+  width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+  width: 1170px;
+}
+}
+/* End Global Rules */
+/* start login */
+.login{
+  background-color: rgb(247, 247, 247);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgb(20, 99, 0);
+}
+.login .container{
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.login .container .image img{
+  height: 100%;
+  max-width: 100%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.login .content{
+  display: flex;
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login .content .text{
+  margin-bottom: 40px;
+}
+.login .content .text h1{
+  margin: 0;
+  font-size: 45px;
+  font-weight: 500;
+}
+.login .content .text p{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.login .content .detils{
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-95px);
+}
+.login .content .detils form{
+  display: flex;
+  flex-direction: column;
+}
+.login .detils form .input:focus{
+  outline: none;
+}
+.login .detils form .input{
+  display: block;
+  padding: 15px;
+  width: 200%;
+  color: var(--main-color);
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  caret-color: var(--main-color);
+  transition: var(--main-transition);
+}
+.login .detils form .input:hover{
+  box-shadow: 0 0 10px rgb(20, 99, 0);
+}
+.login .detils form p{
+  margin: 0;
+  margin-left: 5px;
+}
+.login .detils form p span{
+  margin: 0;
+  display: inline-flex;
+}
+.login .content .btn a{
+  display: flex;
+  width: fit-content;
+  padding: 10px 170px;
+  margin-top: 25px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: var(--main-transition);
+  background-color: var(--main-color);
+}
+.login .content .btn a:hover{
+  background-color: #284217;
+}
+.login .content .or{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-top: 40px;
+}
+.login .content .or span{
+  color: #b3b3b3;
+  letter-spacing: -1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.login .content .other{
+  display: flex;
+  margin-top: 40px;
+}
+.login .content .other a{
+  display: inline-flex;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #777;
+  transition: var(--main-transition);
+}
+.login .content .other a:hover{
+  background-color: var(--main-color);
+}
+.login .content .other a i{
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 10px;
+  transition: var(--main-transition);
+}
+.login .content .other a:hover i{
+  color: white;
+}
+.login .content .other a p{
+  margin: 0;
+  color: black;
+  transition: var(--main-transition);
+}
+.login .content .other a:hover p{
+  color: white;
+}
+.login .content .sign{
+  margin-top: 40px;
+  font-size: 18px;
+}
+.login .content .sign a{
+  color: #0F3DDE;
+  font-weight: bold;
+}
+/* End login */
